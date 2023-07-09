@@ -254,6 +254,7 @@ exports.refreshToken = catchAsync(async (req, res, next) => {
       // TODO : Set id and access_token on req => Forward Request to next middleware
       req.id = id;
       req.access_token = access_token;
+      console.log(access_token);
       next();
     })
     .catch((error) => {
@@ -285,6 +286,7 @@ exports.refreshToken = catchAsync(async (req, res, next) => {
             });
             req.id = id;
             req.access_token = access_token;
+            alert(access_token);
             next();
           })
           .catch((error) => {

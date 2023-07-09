@@ -11,6 +11,7 @@ const categoryRoute = require("./category");
 const chapterRoute = require("./chapter");
 const audiobookRoute = require("./audiobook");
 const episodeRoute = require("./episode");
+const playerRoute = require("./player");
 
 router.use("/v1/auth", authRoute);
 router.use("/v1/user", userRoute);
@@ -23,5 +24,6 @@ router.use("/v1/category", categoryRoute);
 router.use("/v1/chapter", chapterRoute);
 router.use("/v1/audiobook", audiobookRoute);
 router.use("/v1/episode", episodeRoute);
+router.use("/v1/player", playerRoute);
 
 module.exports = router;
